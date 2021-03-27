@@ -56,15 +56,15 @@ const BotName = 'deiltonbot';
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
-            + 'VERSION:3.0\n' 
-            + 'FN:deiltonbot' // Nama kamu
+            + 'VERSION:1.0\n' 
+            + 'FN:novato' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=55669615193:+55 669615-9143\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=5511985598458:+55 11985598458\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '/','*','.'
 blocked = []
 limitawal = '999999999'
-cr = '*Deiltonbot*'
+cr = '*Novatobot*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -750,7 +750,7 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 				case 'menu':
-				case 'deiltonbot':
+				case 'deilton':
 				case 'pika':
 					client.sendMessage(from, help(prefix), text)
 					break
